@@ -14,7 +14,7 @@ class Ball:
         self.ball.shapesize(stretch_wid=0.5, stretch_len=None, outline=None)
         self.ball.penup()
         self.angle = random.choice([45, 135, 225, 315])
-        self.ball_speed = 20
+        self.ball_speed = 14
 
     def move(self):
         """
