@@ -1,6 +1,7 @@
 import random
 from turtle import Turtle, Screen
 
+
 class Ball:
     """
     A class to handle the ball's behavior in the Pong game.
@@ -29,7 +30,7 @@ class Ball:
         Returns:
             str: 'right' if the ball goes past the right wall, 'left' if past the left wall, None otherwise.
         """
-        if self.ball.ycor() > 290 or self.ball.ycor() < -290:
+        if self.ball.ycor() > 280 or self.ball.ycor() < -280:
             self.angle = -self.angle
             return None
         elif self.ball.xcor() > (self.screen.window_width() / 2 + 10):
